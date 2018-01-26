@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Account</title>
+</head>
+<body>
+Create an account:
+<input type="text" id="email" size="50" />
+<a href = "account_confirmation.html" onclick="saveEmail()">Create</a>
+</body>
+</html>
+<script>
+    function saveEmail() {
+        localStorage["email"] = document.getElementById("email").value
+    }
+</script>
